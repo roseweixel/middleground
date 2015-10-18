@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.3'
 gem 'rails-api'
 gem 'active_model_serializers', '~> 0.8.3'
-gem 'devise', '~> 3.4.1'
+gem 'devise_token_auth'
 gem 'sqlite3'
 gem 'sdoc', group: :doc
 gem 'thin'
