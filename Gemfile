@@ -5,9 +5,11 @@ gem 'rails', '4.2.3'
 gem 'rails-api'
 gem 'active_model_serializers', '~> 0.8.3'
 gem 'devise_token_auth'
+gem 'omniauth'
 gem 'sqlite3'
 gem 'sdoc', group: :doc
 gem 'thin'
+gem 'figaro'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
