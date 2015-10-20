@@ -9,7 +9,8 @@ module Api
 
         if @user.valid_password?(params[:password])
           sign_in :user, @user
-          render json: @user, serializer: SessionSerializer, root: nil
+          @token = @user.create_new_auth_token
+          render json: @user, serializer: SessionSerializer, root: nil, token: @token
         else
           invalid_login_attempt
         end
